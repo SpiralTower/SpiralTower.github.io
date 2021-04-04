@@ -3,76 +3,76 @@
 // CVG Main Script \Written By Ligueston@Kamikey
 //Version Info
 
-/*v1.0	04.14	Ôö¼ÓCommentµÄEventIllustration*/
+/*v1.0	04.14	å¢åŠ Commentçš„EventIllustration*/
 
-/*v1.05	04.17	Ôö¼Ó°ëÌõÊúÏßµÄaddClick·½·¨*/
+/*v1.05	04.17	å¢åŠ åŠæ¡ç«–çº¿çš„addClickæ–¹æ³•*/
 
-/*v1.1	04.17	Ôö¼ÓBlink·½·¨*/
+/*v1.1	04.17	å¢åŠ Blinkæ–¹æ³•*/
 
-/*v1.11	04.21	ĞŞ¸Ä±êÌâ*/
+/*v1.11	04.21	ä¿®æ”¹æ ‡é¢˜*/
 
-/*v1.2  04.24	Ö§³Ö¶ÔIE6µÄÍ¸Ã÷png*/
-//º¯ÊıËµÃ÷
+/*v1.2  04.24	æ”¯æŒå¯¹IE6çš„é€æ˜png*/
+//å‡½æ•°è¯´æ˜
 
 /*function Point(x,y)
-	Éú³É²¢ÇÒ·µ»ØÒ»¸öµã.ÓÃÓÚLinkº¯Êı.
-		x->int/x×ø±ê
-		y->int/y×ø±ê
+	ç”Ÿæˆå¹¶ä¸”è¿”å›ä¸€ä¸ªç‚¹.ç”¨äºLinkå‡½æ•°.
+		x->int/xåæ ‡
+		y->int/yåæ ‡
 function Header(route,routeC,routeE,dateC,dateE)
-	Éú³É²¢ÇÒ·µ»Ø±êÍ·.
-		route->str/±êÍ·Ö¸ÏòµÄÂ·ÏßÍ¼Æ¬,¿ÉÓÃÁĞ±í"public"|"misae"|"tomoyo"|"yukine"|"fujibayashi"|"kappei"|"sunohara"|"kotomi"|"fuuko"|"nagisa"|"gunfight"
-		routeC->str/±êÍ·Â·ÏßÖĞÎÄÄÚÈİ
-		routeE->str/±êÍ·Â·ÏßÓ¢ÎÄÄÚÈİ
-		dateC->str/±êÍ·ÈÕÆÚÖĞÎÄÄÚÈİ
-		dateE->str/±êÍ·ÈÕÆÚÓ¢ÎÄÄÚÈİ
+	ç”Ÿæˆå¹¶ä¸”è¿”å›æ ‡å¤´.
+		route->str/æ ‡å¤´æŒ‡å‘çš„è·¯çº¿å›¾ç‰‡,å¯ç”¨åˆ—è¡¨"public"|"misae"|"tomoyo"|"yukine"|"fujibayashi"|"kappei"|"sunohara"|"kotomi"|"fuuko"|"nagisa"|"gunfight"
+		routeC->str/æ ‡å¤´è·¯çº¿ä¸­æ–‡å†…å®¹
+		routeE->str/æ ‡å¤´è·¯çº¿è‹±æ–‡å†…å®¹
+		dateC->str/æ ‡å¤´æ—¥æœŸä¸­æ–‡å†…å®¹
+		dateE->str/æ ‡å¤´æ—¥æœŸè‹±æ–‡å†…å®¹
 function Footer(height,page)
-	Éú³É²¢·µ»ØÓÒ±ßÀ¸
-		height->int/¸ß¶È
-		page->int/Ò³Êı
+	ç”Ÿæˆå¹¶è¿”å›å³è¾¹æ 
+		height->int/é«˜åº¦
+		page->int/é¡µæ•°
 function Textbox_Condition(x,y,text,route)
 function Textbox_Option(x,y,text,route)
 function Textbox_Selection(x,y,text,route)
 function Textbox_Jump(x,y,text,route)
 function Textbox_Block(x,y,text,route)
 function Textbox_Quit(x,y,text,route)
-	Éú³É²¢ÇÒ·µ»ØÏàÓ¦µÄ°´Å¥
-		x->int/x×ø±ê,Ò»°ãÊ¹ÓÃx()º¯ÊıÈ·¶¨
-		y->int/y×ø±ê,Ò»°ãÊ¹ÓÃy()º¯ÊıÈ·¶¨
-		text->str/°´Å¥ÖĞÏÔÊ¾ÎÄ×Ö
-		route->str/½Ç±ê,¸ñÊ½"[·½Ïò]|[¿ØÖÆÑùÊ½][ÎÄ×Ö]|[¿ØÖÆÑùÊ½][ÎÄ×Ö]|...",·½Ïò¿ÉÎª"r"»ò"l","l"Ê±¿ØÖÆÑùÊ½Îª¿ÕÊ±ÂÌÉ«,Îª"-"Ê±ºìÉ«,"r"Ê±Ïà·´.¿ØÖÆÑùÊ½Îª"+"Ê±¶¼ÎªÀ¶É«...¾ÙÀı"l|ÇÙÃÀ|-·ç×Ó|+Î´´¥·¢"
+	ç”Ÿæˆå¹¶ä¸”è¿”å›ç›¸åº”çš„æŒ‰é’®
+		x->int/xåæ ‡,ä¸€èˆ¬ä½¿ç”¨x()å‡½æ•°ç¡®å®š
+		y->int/yåæ ‡,ä¸€èˆ¬ä½¿ç”¨y()å‡½æ•°ç¡®å®š
+		text->str/æŒ‰é’®ä¸­æ˜¾ç¤ºæ–‡å­—
+		route->str/è§’æ ‡,æ ¼å¼"[æ–¹å‘]|[æ§åˆ¶æ ·å¼][æ–‡å­—]|[æ§åˆ¶æ ·å¼][æ–‡å­—]|...",æ–¹å‘å¯ä¸º"r"æˆ–"l","l"æ—¶æ§åˆ¶æ ·å¼ä¸ºç©ºæ—¶ç»¿è‰²,ä¸º"-"æ—¶çº¢è‰²,"r"æ—¶ç›¸å.æ§åˆ¶æ ·å¼ä¸º"+"æ—¶éƒ½ä¸ºè“è‰²...ä¸¾ä¾‹"l|ç´ç¾|-é£å­|+æœªè§¦å‘"
 function Textbox_Date(x,y,text,type)
-	Éú³É²¢ÇÒ·µ»ØÏàÓ¦µÄÈÕÆÚ°´Å¥
-		x->int/x×ø±ê,Ò»°ãÊ¹ÓÃx()º¯ÊıÈ·¶¨
-		y->int/y×ø±ê,Ò»°ãÊ¹ÓÃy()º¯ÊıÈ·¶¨
-		text->str/°´Å¥ÖĞÏÔÊ¾ÎÄ×Ö
-		type->str/ÔÚÉÏÃæÊ±ÉèÖÃÎª"top",ÒÔĞŞÕıÎ»ÖÃ,ÔÚÏÂÊ±¿ÉÒÔÁô¿Õ
+	ç”Ÿæˆå¹¶ä¸”è¿”å›ç›¸åº”çš„æ—¥æœŸæŒ‰é’®
+		x->int/xåæ ‡,ä¸€èˆ¬ä½¿ç”¨x()å‡½æ•°ç¡®å®š
+		y->int/yåæ ‡,ä¸€èˆ¬ä½¿ç”¨y()å‡½æ•°ç¡®å®š
+		text->str/æŒ‰é’®ä¸­æ˜¾ç¤ºæ–‡å­—
+		type->str/åœ¨ä¸Šé¢æ—¶è®¾ç½®ä¸º"top",ä»¥ä¿®æ­£ä½ç½®,åœ¨ä¸‹æ—¶å¯ä»¥ç•™ç©º
 function Textbox_Condition_C(x,y,text,number,Summery,Select,Caution,Option,Events,EventIllu,Title,yAdjust,route)
 function Textbox_Option_C(x,y,text,number,Summery,Select,Caution,Option,Events,EventIllu,Title,yAdjust,route)
 function Textbox_Selection_C(x,y,text,number,Summery,Select,Caution,Option,Events,EventIllu,Title,yAdjust,route)
-	Éú³É²¢ÇÒ·µ»ØÏàÓ¦´ø×¢ÊÍµÄ°´Å¥
-		x->int/x×ø±ê,Ò»°ãÊ¹ÓÃx()º¯ÊıÈ·¶¨
-		y->int/y×ø±ê,Ò»°ãÊ¹ÓÃy()º¯ÊıÈ·¶¨
-		text->str/°´Å¥ÖĞÏÔÊ¾ÎÄ×Ö
-		number->str/×¢ÊÍË÷ÒıºÅ
-		Summery->str/×Ü½áĞĞ,¶ÔÓ¦[A]
-		Select->str/×¢ÊÍĞĞ,Ò²¾ÍÊÇÑÕÉ«ÉÔÉîµÄÄÇĞĞ,¶ÔÓ¦[B],¶ÔÓÚÀ¶É«¸ßÁÁÇëÓÃ"{"ºÍ"}"»·ÈÆ,ºìÉ«¸ßÁÁÇëÓÃ"["ºÍ"]"»·ÈÆ
-		Caution->str/ÌáÊ¾ĞĞ,Ò²¾ÍÊÇÓĞÌ¾ºÅ±êÖ¾µÄÄÇĞĞ,¶ÔÓ¦[C].
-		Option->str/Ñ¡ÏîĞĞ,ÑùÊ½"[¿ØÖÆÑùÊ½][ÎÄ×Ö]|..."×î¶àÈı¸ö,¿ØÖÆÑùÊ½Îª"+"Ê±¼ıÍ·ÏòÓÒ,"-"Ê±ÏòÏÂ
-		Events->str/ÊÂ¼şĞĞ,ÑùÊ½"[ÊÂ¼ş1]...[ÊÂ¼ş8]",À¶É«µÄÍ¼±êÇëÓÃ"1",»ÒÉ«ÓÃ"0"...¾ÙÀı"01001100"
-		EventIllu->str/ÊÂ¼ş¸½¼ÓËµÃ÷
-		Title->str/¸±±êÌâ,Èç¹ûÎª¿ÕµÄ»°Ê¹ÓÃtextÄÚÈİ,·ñÔòÓÃ´Ë´¦µÄ
-		yAdjust->int/×¢ÊÍÀ¸y×ø±êÆ«ÒÆ
-		route->str/Í¬ÆÕÍ¨°´Å¥µÄroute
+	ç”Ÿæˆå¹¶ä¸”è¿”å›ç›¸åº”å¸¦æ³¨é‡Šçš„æŒ‰é’®
+		x->int/xåæ ‡,ä¸€èˆ¬ä½¿ç”¨x()å‡½æ•°ç¡®å®š
+		y->int/yåæ ‡,ä¸€èˆ¬ä½¿ç”¨y()å‡½æ•°ç¡®å®š
+		text->str/æŒ‰é’®ä¸­æ˜¾ç¤ºæ–‡å­—
+		number->str/æ³¨é‡Šç´¢å¼•å·
+		Summery->str/æ€»ç»“è¡Œ,å¯¹åº”[A]
+		Select->str/æ³¨é‡Šè¡Œ,ä¹Ÿå°±æ˜¯é¢œè‰²ç¨æ·±çš„é‚£è¡Œ,å¯¹åº”[B],å¯¹äºè“è‰²é«˜äº®è¯·ç”¨"{"å’Œ"}"ç¯ç»•,çº¢è‰²é«˜äº®è¯·ç”¨"["å’Œ"]"ç¯ç»•
+		Caution->str/æç¤ºè¡Œ,ä¹Ÿå°±æ˜¯æœ‰å¹å·æ ‡å¿—çš„é‚£è¡Œ,å¯¹åº”[C].
+		Option->str/é€‰é¡¹è¡Œ,æ ·å¼"[æ§åˆ¶æ ·å¼][æ–‡å­—]|..."æœ€å¤šä¸‰ä¸ª,æ§åˆ¶æ ·å¼ä¸º"+"æ—¶ç®­å¤´å‘å³,"-"æ—¶å‘ä¸‹
+		Events->str/äº‹ä»¶è¡Œ,æ ·å¼"[äº‹ä»¶1]...[äº‹ä»¶8]",è“è‰²çš„å›¾æ ‡è¯·ç”¨"1",ç°è‰²ç”¨"0"...ä¸¾ä¾‹"01001100"
+		EventIllu->str/äº‹ä»¶é™„åŠ è¯´æ˜
+		Title->str/å‰¯æ ‡é¢˜,å¦‚æœä¸ºç©ºçš„è¯ä½¿ç”¨textå†…å®¹,å¦åˆ™ç”¨æ­¤å¤„çš„
+		yAdjust->int/æ³¨é‡Šæ yåæ ‡åç§»
+		route->str/åŒæ™®é€šæŒ‰é’®çš„route
 function Link()
-	Éú³É²¢ÇÒ·µ»ØÁ¬Ïß
-		²ÎÊıµÚÒ»¸öºÍ×îºóÒ»¸ö¿ÉÒÔÎª°´Å¥¶ÔÏó,ÆäÓàµÄ±ØĞëÎªµã¶ÔÏó.Î»ÖÃÔÚÇ°µÄ²ÎÊıµÄy×ø±ê²»µÃĞ¡ÓÚÔÚÎ»ÖÃÔÚºóµÄ.
+	ç”Ÿæˆå¹¶ä¸”è¿”å›è¿çº¿
+		å‚æ•°ç¬¬ä¸€ä¸ªå’Œæœ€åä¸€ä¸ªå¯ä»¥ä¸ºæŒ‰é’®å¯¹è±¡,å…¶ä½™çš„å¿…é¡»ä¸ºç‚¹å¯¹è±¡.ä½ç½®åœ¨å‰çš„å‚æ•°çš„yåæ ‡ä¸å¾—å°äºåœ¨ä½ç½®åœ¨åçš„.
 function Board(y,y2)
-	Éú³É²¢·µ»ØÒ»¸öµ×°å
-		y->int/ÆğÊ¼y×ø±ê
-		y2->int/ÖÕÖ¹y×ø±ê*/
+	ç”Ÿæˆå¹¶è¿”å›ä¸€ä¸ªåº•æ¿
+		y->int/èµ·å§‹yåæ ‡
+		y2->int/ç»ˆæ­¢yåæ ‡*/
 //Basic Function
 function GetRequest() {
-  var url = location.search; //»ñÈ¡urlÖĞ"?"·ûºóµÄ×Ö´®
+  var url = location.search; //è·å–urlä¸­"?"ç¬¦åçš„å­—ä¸²
 
   var theRequest = new Object();
 
@@ -122,15 +122,15 @@ function lib_bwcheck() {
 }
 
 var bw = new lib_bwcheck();
-var objArr = new Array(); //¶ÔÏóÒıÓÃ´æ´¢Êı×é,Ãû×ÖÒıÓÃ
+var objArr = new Array(); //å¯¹è±¡å¼•ç”¨å­˜å‚¨æ•°ç»„,åå­—å¼•ç”¨
 
 function getObjectRef(name) {
-  //ÕÕidÈ¡¶ÔÏó
+  //ç…§idå–å¯¹è±¡
   if (document.getElementById) return document.getElementById(name);else if (document.all) return document.all[name];else return null;
 }
 
 function show(name) {
-  //ÏÔÊ¾¶ÔÏóif hidden
+  //æ˜¾ç¤ºå¯¹è±¡if hidden
   var obj = getObjectRef(name);
 
   if (obj) {
@@ -139,7 +139,7 @@ function show(name) {
 }
 
 function hide(name) {
-  //Òş²Ø¶ÔÏóif visible
+  //éšè—å¯¹è±¡if visible
   var obj = getObjectRef(name);
 
   if (obj) {
@@ -148,7 +148,7 @@ function hide(name) {
 }
 
 function moveMeTo(name, x, y) {
-  //ÒÆ¶¯¶ÔÏóif possible
+  //ç§»åŠ¨å¯¹è±¡if possible
   var obj = getObjectRef(name);
 
   if (obj) {
@@ -158,7 +158,7 @@ function moveMeTo(name, x, y) {
 }
 
 function moveMeBy(name, x, y) {
-  //ÒÆ¶¯¶ÔÏóif possible
+  //ç§»åŠ¨å¯¹è±¡if possible
   var obj = getObjectRef(name);
 
   if (obj) {
@@ -168,7 +168,7 @@ function moveMeBy(name, x, y) {
 }
 
 function addMouseClick(name, func) {
-  //¸ø¶ÔÏóÔö¼ÓonclickÊÂ¼ş
+  //ç»™å¯¹è±¡å¢åŠ onclickäº‹ä»¶
   var obj = getObjectRef(name);
   var ret = obj.onclick;
 
@@ -181,7 +181,7 @@ function addMouseClick(name, func) {
 }
 
 function remMouseClick(name) {
-  //É¾È¥¶ÔÏóonclickÊÂ¼ş
+  //åˆ å»å¯¹è±¡onclickäº‹ä»¶
   var obj = getObjectRef(name);
 
   if (obj) {
@@ -191,7 +191,7 @@ function remMouseClick(name) {
 }
 
 function addMouseOver(name, func) {
-  //¸ø¶ÔÏóÔö¼ÓonmouseoverÊÂ¼ş
+  //ç»™å¯¹è±¡å¢åŠ onmouseoveräº‹ä»¶
   var obj = getObjectRef(name);
   var ret = obj.onmouseover;
 
@@ -203,7 +203,7 @@ function addMouseOver(name, func) {
 }
 
 function remMouseOver(name) {
-  //É¾È¥¶ÔÏóonmouseoverÊÂ¼ş
+  //åˆ å»å¯¹è±¡onmouseoveräº‹ä»¶
   var obj = getObjectRef(name);
 
   if (obj) {
@@ -212,7 +212,7 @@ function remMouseOver(name) {
 }
 
 function addMouseOut(name, func) {
-  //¸ø¶ÔÏóÔö¼ÓonmouseoverÊÂ¼ş
+  //ç»™å¯¹è±¡å¢åŠ onmouseoveräº‹ä»¶
   var obj = getObjectRef(name);
   var ret = obj.onmouseout;
 
@@ -224,7 +224,7 @@ function addMouseOut(name, func) {
 }
 
 function remMouseOut(name) {
-  //É¾È¥¶ÔÏóonmouseoverÊÂ¼ş
+  //åˆ å»å¯¹è±¡onmouseoveräº‹ä»¶
   var obj = getObjectRef(name);
 
   if (obj) {
@@ -257,15 +257,15 @@ function addLink(name, linkname) {
 } //Basic Vaiable
 
 
-var objCount = 0; //¶ÔÏó¼ÆÊı
+var objCount = 0; //å¯¹è±¡è®¡æ•°
 
-var commentTop = 0; //ÆÀÂÛ²¿·Öµ±Ç°¸ß¶È
+var commentTop = 0; //è¯„è®ºéƒ¨åˆ†å½“å‰é«˜åº¦
 
-var checkImg = false; //±ê¼ÇÊÇ·ñ½øĞĞÍ¼Æ¬»º´æ
+var checkImg = false; //æ ‡è®°æ˜¯å¦è¿›è¡Œå›¾ç‰‡ç¼“å­˜
 
-var appendix = bw.ie6 && false ? ".gif" : ".png"; //Í¼Æ¬ºó×º
+var appendix = bw.ie6 && false ? ".gif" : ".png"; //å›¾ç‰‡åç¼€
 
-var sizeSet; //´óĞ¡ÉèÖÃ
+var sizeSet; //å¤§å°è®¾ç½®
 
 sizeSet = GetRequest()["size"];
 if (isNaN(sizeSet)) sizeSet = 0;else sizeSet = parseInt(sizeSet);
@@ -394,7 +394,7 @@ if (sizeSet == 0) {
 } //Image Source
 
 
-var folder = new Array("Background/", "Bubble/", "Comment/", "Title/", "Line/", "Textbox/", "Board/", "Number/", "Misc/"); //Í¼Æ¬Ç°×ºÎÄ¼ş¼ĞÃû
+var folder = new Array("Background/", "Bubble/", "Comment/", "Title/", "Line/", "Textbox/", "Board/", "Number/", "Misc/"); //å›¾ç‰‡å‰ç¼€æ–‡ä»¶å¤¹å
 
 var src_background = sizestr + "/" + folder[0] + "Background_Pattern" + appendix;
 var src_Textbox_Block = sizestr + "/" + folder[5] + "Textbox_Block" + appendix;
@@ -644,7 +644,7 @@ function FooterBase(x, y, height, page) {
   this.leftx = x;
   this.topy = y;
   this.page = page;
-  document.title += " ¡ú Page" + page;
+  document.title += " â†’ Page" + page;
   this.HTML = "";
   this.zindex = COMMENTBGZINDEX;
   this.times = Math.ceil((height - COMMENTBGTOPHEIGHT - COMMENTBGBOTTOMHEIGHT) / BGREPEATHEIGHT);
@@ -1540,7 +1540,7 @@ function Textbox_Condition_C(x, y, text, number, Summery, Select, Caution, Optio
     if (!commentShown) rightClick();
     setScrollLeft(COMMENTLEFT);
   }, true);
-  tempObj.numObj.addTitle("µã»÷×ªµ½×¢ÊÍ");
+  tempObj.numObj.addTitle("ç‚¹å‡»è½¬åˆ°æ³¨é‡Š");
   return tempObj;
 }
 
@@ -1553,7 +1553,7 @@ function Textbox_Option_C(x, y, text, number, Summery, Select, Caution, Option, 
     if (!commentShown) rightClick();
     setScrollLeft(COMMENTLEFT);
   }, true);
-  tempObj.numObj.addTitle("µã»÷×ªµ½×¢ÊÍ");
+  tempObj.numObj.addTitle("ç‚¹å‡»è½¬åˆ°æ³¨é‡Š");
   return tempObj;
 }
 
@@ -1566,7 +1566,7 @@ function Textbox_Selection_C(x, y, text, number, Summery, Select, Caution, Optio
     if (!commentShown) rightClick();
     setScrollLeft(COMMENTLEFT);
   }, true);
-  tempObj.numObj.addTitle("µã»÷×ªµ½×¢ÊÍ");
+  tempObj.numObj.addTitle("ç‚¹å‡»è½¬åˆ°æ³¨é‡Š");
   return tempObj;
 }
 
@@ -1671,7 +1671,7 @@ function updateLoadingProcess(i, n) {
     return;
   }
 
-  getObjectRef("loadingStatus").value = "ÕıÔÚ»º´æÍ¼Æ¬:" + (i * 100 / n).toFixed(1) + "%";
+  getObjectRef("loadingStatus").value = "æ­£åœ¨ç¼“å­˜å›¾ç‰‡:" + (i * 100 / n).toFixed(1) + "%";
 
   if (i == 0) {
     getObjectRef("loadingStatusBtn").style.display = "block";
@@ -1778,7 +1778,7 @@ function setPage(page, type) {
 
 function jumpPage() {
   if (selectPage != hdft["footer"].page) {
-    if (confirm("È·ÊµÒªÌø×ªµ½ËùÑ¡µÄµÚ" + selectPage + "Ò³Âğ£¿")) {
+    if (confirm("ç¡®å®è¦è·³è½¬åˆ°æ‰€é€‰çš„ç¬¬" + selectPage + "é¡µå—ï¼Ÿ")) {
       setPage(selectPage, "jump");
       gotopage(selectPage);
     } else {
